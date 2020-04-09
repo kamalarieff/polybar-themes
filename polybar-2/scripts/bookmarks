@@ -37,7 +37,7 @@ LIGHT_GREEN="#7cb342"
 BOOKMARKS="$(rofi -no-lazy-grab -sep "|" -dmenu -i -p 'Bookmarks :' \
 -hide-scrollbar true \
 -bw 0 \
--lines 4 \
+-lines 5 \
 -line-padding 10 \
 -padding 20 \
 -width 15 \
@@ -49,8 +49,9 @@ BOOKMARKS="$(rofi -no-lazy-grab -sep "|" -dmenu -i -p 'Bookmarks :' \
 -color-normal "$BACKGROUND_ALT,$FOREGROUND,$BACKGROUND_ALT,$HIGHLIGHT_BACKGROUND,$HIGHLIGHT_FOREGROUND" \
 -color-active "$BACKGROUND,$MAGENTA,$BACKGROUND_ALT,$HIGHLIGHT_BACKGROUND,$HIGHLIGHT_FOREGROUND" \
 -color-urgent "$BACKGROUND,$YELLOW,$BACKGROUND_ALT,$HIGHLIGHT_BACKGROUND,$HIGHLIGHT_FOREGROUND" \
-<<< "mobile-revamp|regress_compose|dotfiles|.config")"
+<<< "repos|mobile-revamp|regress_compose|dotfiles|.config")"
 case "$BOOKMARKS" in
+  *repos) kitty -d ~/repos ranger & ;;
   *mobile-revamp) kitty -d ~/repos/mobile-revamp ranger & ;;
   *regress_compose) kitty -d ~/repos/regress_compose ranger & ;;
   *dotfiles) kitty -d ~/dotfiles ranger &;;
