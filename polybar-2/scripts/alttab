@@ -45,6 +45,7 @@ rofi -no-lazy-grab -show window \
 -kb-mode-next "Shift+Right,Control+Tab,Control+l" \
 -kb-mode-previous "Shift+Left,Control+Shift+Tab,Control+h" \
 -kb-remove-char-back "BackSpace" \
+-me-select-entry '' -me-accept-entry 'MousePrimary' \
 -lines 10 \
 -line-padding 10 \
 -padding 20 \
