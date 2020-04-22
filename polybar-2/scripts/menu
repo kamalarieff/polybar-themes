@@ -34,11 +34,19 @@ LIGHT_BLUE="#039be5"
 LIGHT_GREEN="#7cb342"
 
 # Launch Rofi
-rofi -no-lazy-grab -show drun \
+rofi -no-lazy-grab -show combi \
 -combi-modi window,drun \
 -display-drun "Applications :" -drun-display-format "{name}" \
 -hide-scrollbar true \
 -bw 0 \
+-kb-row-up "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab" \
+-kb-row-down "Down,Control+j" \
+-kb-accept-entry "Control+m,Return,KP_Enter" \
+-kb-remove-to-eol "Control+Shift+e" \
+-kb-mode-next "Shift+Right,Control+Tab,Control+l" \
+-kb-mode-previous "Shift+Left,Control+Shift+Tab,Control+h" \
+-kb-remove-char-back "BackSpace" \
+-me-select-entry '' -me-accept-entry 'MousePrimary' \
 -lines 10 \
 -line-padding 10 \
 -padding 20 \
