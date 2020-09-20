@@ -35,9 +35,14 @@ LIGHT_GREEN="#7cb342"
 
 # Launch Rofi
 rofi -no-lazy-grab -show window \
--display-drun "Applications :" -drun-display-format "{name}" \
+-display-drun "Applications :" \
+-drun-display-format "{name}" \
+-window-format "{w} {t} {n} {r} {c}" \
+-window-thumbnail \
 -hide-scrollbar true \
 -bw 0 \
+-yoffset 40 \
+-location 1 \
 -kb-row-up "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab" \
 -kb-row-down "Down,Control+j" \
 -kb-accept-entry "Control+m,Return,KP_Enter" \
@@ -47,7 +52,7 @@ rofi -no-lazy-grab -show window \
 -kb-remove-char-back "BackSpace" \
 -me-select-entry '' -me-accept-entry 'MousePrimary' \
 -lines 10 \
--line-padding 10 \
+-line-padding 15 \
 -padding 20 \
 -width 40 \
 -columns 1 \
