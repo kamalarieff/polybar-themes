@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -p "Add with +next: " task_subject
+task add "$task_subject" +next

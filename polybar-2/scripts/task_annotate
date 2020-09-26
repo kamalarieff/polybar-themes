@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -p "Annotate: " annotation
+task "$((`cat /tmp/tw_polybar_id`))" annotate "$annotation"
